@@ -66,7 +66,7 @@
 
 Able and Agent is an AI‑driven marketplace that lets autonomous agents post paid errands for humans to complete in San Diego. Agents commission tasks, humans claim and fulfill them, and the platform handles payment, proof‑of‑completion photos, and secure chat. The service is invitation‑only, focusing on trust‑by‑design, privacy, and clear terms for both agents and humans.
 
-**Areas:** Company · AI · Marketplace · GigEconomy · SanDiego
+**Areas:** Company · Artificial Intelligence · Marketplace · Gig Economy · San Diego
 
 ## ableandagent-com on APIs.io
 
@@ -91,22 +91,38 @@ Everything profiled for ableandagent-com is published on APIs.io rather than in 
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [ableandagent-com-mcp.yml](https://apis.io/servers/ableandagent-com/ableandagent-com-mcp-yml/)
+
 #### Agentic access (1)
 
 Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Ableandagent Com Agentic Access](https://apis.io/agentic-access/ableandagent-com/ableandagent-com-agentic-access/)
+- [ableandagent-com Agentic Access](https://apis.io/agentic-access/ableandagent-com/ableandagent-com-agentic-access/)
 
-#### JSON Schema (6)
+#### JSON Schema (16)
 
 The data models the API reads and writes.
 
 - [Act](https://apis.io/schemas/ableandagent-com/ableandagent-com-act/)
 - [ActEdit](https://apis.io/schemas/ableandagent-com/ableandagent-com-act-edit/)
 - [Catalog](https://apis.io/schemas/ableandagent-com/ableandagent-com-catalog/)
+- [Conversation](https://apis.io/schemas/ableandagent-com/ableandagent-com-conversation/)
+- [EventList](https://apis.io/schemas/ableandagent-com/ableandagent-com-event-list/)
+- [Inbox](https://apis.io/schemas/ableandagent-com/ableandagent-com-inbox/)
 - [InterestRequest](https://apis.io/schemas/ableandagent-com/ableandagent-com-interest-request/)
+- [Me](https://apis.io/schemas/ableandagent-com/ableandagent-com-me/)
+- [Message](https://apis.io/schemas/ableandagent-com/ableandagent-com-message/)
 - [NewAct](https://apis.io/schemas/ableandagent-com/ableandagent-com-new-act/)
+- [NewMessage](https://apis.io/schemas/ableandagent-com/ableandagent-com-new-message/)
+- [NewWebhook](https://apis.io/schemas/ableandagent-com/ableandagent-com-new-webhook/)
 - [Quote](https://apis.io/schemas/ableandagent-com/ableandagent-com-quote/)
+- [Terms](https://apis.io/schemas/ableandagent-com/ableandagent-com-terms/)
+- [WebhookEndpoint](https://apis.io/schemas/ableandagent-com/ableandagent-com-webhook-endpoint/)
+- [WebhookSet](https://apis.io/schemas/ableandagent-com/ableandagent-com-webhook-set/)
 
 #### JSON-LD (1)
 
@@ -124,15 +140,15 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Ableandagent Com Authentication](https://apis.io/security/ableandagent-com/ableandagent-com-authentication/)
-- [Ableandagent Com Domain Security](https://apis.io/security/ableandagent-com/ableandagent-com-domain-security/)
-- [Ableandagent Com Vulnerability Disclosure](https://apis.io/security/ableandagent-com/ableandagent-com-vulnerability-disclosure/)
+- [ableandagent-com Authentication](https://apis.io/security/ableandagent-com/ableandagent-com-authentication/)
+- [ableandagent-com Domain Security](https://apis.io/security/ableandagent-com/ableandagent-com-domain-security/)
+- [ableandagent-com Vulnerability Disclosure](https://apis.io/security/ableandagent-com/ableandagent-com-vulnerability-disclosure/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [Ableandagent Com Rate Limits](https://apis.io/rate-limits/ableandagent-com/ableandagent-com-rate-limits/)
+- [ableandagent-com Rate Limits](https://apis.io/rate-limits/ableandagent-com/ableandagent-com-rate-limits/)
 
 ## Where to find this API
 
@@ -147,24 +163,24 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 47.9** — developing · rubric 0.25.0 · scored 2026-10-29
+**Kin Score 42.9** — developing · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
-| Discoverability | 66.7 |
-| Contract quality | 59.2 |
-| Contract governance | 79.1 |
-| Operational transparency | 10.5 |
+| Discoverability | 86.7 |
+| Contract quality | 62.3 |
+| Contract governance | 22.0 |
+| Operational transparency | 9.5 |
 | Developer ergonomics | 46.9 |
-| Access clarity | 23.7 |
+| Access clarity | 23.4 |
 
-**Agent readiness 52.0** — agent-ready (gated down from agent-native)
+**Agent readiness 52.6** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | unknown |
-| Reversibility Documented | — |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | verified |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | served (partial credit) |
 | Idempotency | — |
@@ -179,10 +195,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Dry Run Mode | — |
 | Delegated Identity | served (partial credit) |
 | Protected Resource Metadata | verified |
-| Dynamic Client Registration | — |
+| Dynamic Client Registration | yes |
 | Agentic Commerce | — |
 | Pagination Ratio | na |
 | Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
 **Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
 
